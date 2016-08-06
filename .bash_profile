@@ -10,7 +10,7 @@ export PS1="\u \w$ "
 ###########
 # Aliases #
 ###########
-alias ll='ls -l'
+alias ll='ls -lAogh --group-directories-first'
 alias la='ls -A'
 alias clera='clear'
 alias please='sudo $(history -p !-1)'
