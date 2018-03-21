@@ -49,11 +49,9 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Enable syntax highlighting and Solarized theme
 syntax enable
-set background=dark
-colorscheme base16
 
 " Remape ESC to jk
-imap ;; <Esc>
+imap jk <Esc>
 
 " Turn off the arrow keys because LEARNING
 nnoremap <up> <nop>
