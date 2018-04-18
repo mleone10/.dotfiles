@@ -24,3 +24,8 @@ if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
 
+###########
+# Exports #
+###########
+export GOPATH=$HOME/go
+
