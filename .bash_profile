@@ -28,4 +28,5 @@ fi
 # Exports #
 ###########
 export GOPATH=$HOME/go
+export EDITOR=vim
 
