@@ -22,8 +22,8 @@ set autoindent
 " Smartindent automatically adds more indents in C-like files
 set smartindent
 
-" Using >> or << moves a line left/right this many spaces
-set shiftwidth=4
+" Tabs have this many spaces when editing
+set softtabstop=4
 
 " Tabs have this many spaces
 set tabstop=4
@@ -34,9 +34,8 @@ set wrap
 " Word wrap
 set textwidth=79
 
-" Set format options regarding lists and comments
-set formatoptions+=qrn1
-set comments+=n:*,n:#,n:>
+" Highlight current line
+set cursorline
 
 " Set colored column
 set colorcolumn=80
@@ -48,7 +47,10 @@ set backspace=2
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Enable syntax highlighting and Solarized theme
-syntax enable
+syntax on
+
+"Enable file-specific indentation
+filetype plugin indent on
 
 " Remape ESC to jk
 imap jk <Esc>
