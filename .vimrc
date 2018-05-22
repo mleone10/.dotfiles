@@ -28,12 +28,6 @@ set softtabstop=4
 " Tabs have this many spaces
 set tabstop=4
 
-" Visually wrap lines at the end of the screen
-set wrap
-
-" Word wrap
-set textwidth=79
-
 " Highlight current line
 set cursorline
 
