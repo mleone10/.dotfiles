@@ -1,5 +1,8 @@
 " Mario Leone
 
+" Activate Pathogen
+execute pathogen#infect()
+
 " Stop VI compatibility
 set nocompatible
 
