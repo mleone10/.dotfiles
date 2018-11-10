@@ -28,4 +28,4 @@ fi
 # Exports #
 ###########
 export EDITOR=vim
-
+export PATH=$PATH:/usr/local/go/bin
