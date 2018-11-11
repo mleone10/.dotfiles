@@ -6,11 +6,18 @@ execute pathogen#infect()
 " Stop VI compatibility
 set nocompatible
 
+" Setup colors using the Base16 helper script
+if filereadable(expand("~/.vimrc_background"))
+        let base16colorspace=256
+        source ~/.vimrc_background
+endif
+set termguicolors
+
 " Show ruler
 set ruler
 
 " Show line numbers over there <-
-set relativenumber 
+set relativenumber
 set number
 
 " Show mode
@@ -43,7 +50,7 @@ set backspace=2
 " \W will remove all trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
-" Enable syntax highlighting and Solarized theme
+" Enable syntax highlighting
 syntax on
 
 "Enable file-specific indentation
